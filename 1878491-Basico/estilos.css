@@ -1,0 +1,128 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: darkgrey;
+}
+
+header {
+    background-color: #232f3e;
+    padding: 15px;
+}
+
+header h1{
+    color:white;
+}
+
+footer{
+    padding: 15px;
+    background-color: #131921;
+    color: white;
+ 
+}
+
+
+main{
+    margin: 0 5%;
+    width: 90%;
+}
+
+main #contenedor{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+main .tarjeta-25{
+    display: inline-block;
+    max-width: 20%;
+    margin: 0 2%;
+    padding: 30px
+    background-color: white;
+}
+
+main .tarjeta-25 img{
+    width: 100%;
+}
+
+
+main #login{
+    background-color: #fbd934;
+    border: none;
+    padding: 10px;
+}
+
+/*footer*/
+
+footer .links{
+    list-style: none;
+    display: inline-block;
+    max-width: 20%;
+    margin: 0 2%;
+    padding: 30px
+    background-color: white;
+}
+
+/*lo responsivo*/
+@media screen and (max-width:599px){/*celular*/
+    
+    h1{
+        font-size: 25px;
+    }
+    
+    main #contenedor{
+        display:block;
+        margin: 0;
+    }
+
+    main .tarjeta-25{
+        max-width: 100%;
+        display: block;
+        margin: 8% 0;
+    }
+
+    main .tarjeta-25 #login{
+        width: 100%;
+    }
+
+    footer .links{
+        list-style: none;
+        display:block;
+        max-width: 90%;
+        margin: 0 2%;
+        padding: 30px
+        background-color: white;
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width:600px){/*tablet*/
+    
+    h1{
+        font-size: 28px;
+    }
+
+    main{
+        display: block;
+        margin: 0%;
+        width: 100%;
+    }
+    main #contenedor{
+        margin: 2%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main .tarjeta-25{
+        width: 33%;
+        max-width: 20%;
+        margin: 1%;
+    }
+
+    main .tarjeta-25 #login{
+        width: 100%;
+    }
+    
+}
