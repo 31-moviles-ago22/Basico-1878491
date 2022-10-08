@@ -1,0 +1,94 @@
+html {
+    /*Estilo Global*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #eaeded;
+}
+
+header {
+    background-color: #232f3e;
+    padding: 15px;
+}
+
+header h1 {
+    color: white;
+}
+
+footer {
+    padding: 15px;
+    background-color: #131921;
+    color: white;
+}
+
+
+/*Main Content*/
+
+main {
+    margin: 0 5%;
+    width: 90%;
+}
+
+main #contenedor {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+main .tarjeta-25 {
+    display: inline-block;
+    max-width: 20%;
+    margin: 0 2%;
+    padding: 30px;
+    background-color: rgb(25, 63, 78);
+}
+
+main .tarjeta-25 img {
+    width: 100%;
+}
+
+main #login {
+    background-color: #fbd934;
+    border: none;
+    padding: 10px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color: rgb(19, 212, 230)
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width: 962px) {
+    body {
+        background-color: rgb(166, 255, 0)
+    }
+    main #contenedor {
+        display: block;
+    }
+    main .tarjeta-25 {
+        display: inline-block;
+        margin-top: 20px;
+        max-width: 25%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main #contenedor {
+        display: block;
+    }
+    main .tarjeta-25 {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    body {
+        background-color: rgb(255, 0, 30);
+    }
+}
