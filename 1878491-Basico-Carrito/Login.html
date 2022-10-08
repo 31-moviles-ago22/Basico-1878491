@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>HI</h1>
+    </header>
+    <main>
+        <div id="contenedor">
+            <h2>
+                inciar sesion
+            </h2>
+            <div id="login">
+                <label for="usuario"> usuario:</label>
+                <input type="text" id="usuario" oninput={usuario()}>
+                <br><br>
+                <label for="password"> contraseña:</label>
+                <input type="text" id="password" oninput={password()}>
+                <br><br>
+                <button id="inicioses" onclick={Respuesta()}>iniciar sesion</button>
+                <br><br>
+                <a href="">olvide mi contra</a><br><br>
+                <a href="">Registrame</a>
+
+            </div>
+
+        </div>
+    </main>
+</body>
+<script src="scriptLogin.js">
+</script>
+
+</html>

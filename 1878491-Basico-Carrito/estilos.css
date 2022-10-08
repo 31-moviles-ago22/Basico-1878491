@@ -1,0 +1,221 @@
+html {
+    /*Estilo Global*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #eaeded;
+}
+
+header {
+    background-color: #232f3e;
+    padding: 15px;
+}
+
+header h1 {
+    color: white;
+}
+
+footer {
+    padding: 15px;
+    background-color: #131921;
+    color: white;
+}
+
+
+/*Main Content*/
+
+main {
+    margin: 0 5%;
+    width: 90%;
+}
+
+main #contenedor {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+main .tarjeta-25 {
+    display: inline-block;
+    max-width: 20%;
+    margin: 0 2%;
+    padding: 30px;
+    background-color: rgb(25, 63, 78);
+}
+
+main .tarjeta-25 img {
+    width: 100%;
+}
+
+main #login {
+    background-color: hsl(0, 84%, 40%);
+    border: none;
+    padding: 10px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color: rgb(19, 212, 230)
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width: 962px) {
+    body {
+        background-color: rgb(166, 255, 0)
+    }
+    main #contenedor {
+        display: block;
+    }
+    main .tarjeta-25 {
+        display: inline-block;
+        margin-top: 20px;
+        max-width: 25%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main #contenedor {
+        display: block;
+    }
+    main .tarjeta-25 {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    body {
+        background-color: rgb(255, 0, 30);
+    }
+}
+
+
+/*pagina de login*/
+
+main #loginSeccion {
+    background-color: white;
+    padding: 8% 7%;
+    margin: -2%;
+}
+
+main #contenedorLogin {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+#loginSeccion a {
+    color: #0a87af;
+    text-decoration: none;
+    font-size: small;
+}
+
+#loginSeccion a:hover {
+    color: #fd850d;
+    text-decoration: underline;
+}
+
+#loginSeccion label {
+    font-size: small;
+    font-weight: bold;
+}
+
+#loginSeccion input {
+    font-size: medium;
+    height: 31px;
+    padding: 1px 5px;
+    line-height: normal;
+}
+
+#loginSeccion input:focus {
+    outline: 2px solid #fd850d;
+}
+
+#loginSeccion button {
+    text-align: center;
+    margin: auto;
+    padding: 2% 30%;
+    outline: 0;
+    background-color: #ffd814;
+    border: none;
+}
+
+#loginSeccion .buttonClicked {
+    background-color: #e9cb38;
+    outline: 2px solid black;
+}
+
+#loginSeccion .error {
+    background-color: pink;
+    border: red;
+    border-radius: 2px;
+    border-style: solid;
+    padding: 2%;
+    font-size: small;
+    text-align: center;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+
+/*pag de carro*/
+
+.tarjetaCarrito img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tarjetaCarrito {
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    background-color: white;
+    margin: 2%;
+    max-width: 20%;
+    padding: 5%;
+}
+
+#contenedorCarrito {
+    display: flex;
+    margin: 0%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#carroCompras {
+    background-color: white;
+    margin: 2%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#carroCompras img {
+    width: 80%;
+    height: 200px;
+    max-width: fit-content;
+    max-height: max-content;
+}
+
+header span {
+    color: black;
+    background-color: #14c8ff;
+    padding: .5%;
+    border-radius: 10px;
+}
+
+.articuloCarrito {
+    display: inline-block;
+    margin: 0.5px;
+    height: auto;
+    width: 17vh;
+    text-align: center;
+    border-style: solid;
+    padding: 1%;
+}

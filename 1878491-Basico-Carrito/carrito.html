@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi tienda en linea</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Carrito</h1>
+        <span id="cantArticulos">Articulos en el carrito: 0</span>
+    </header>
+
+    <section id="carroCompras">
+        <!--Articulos en el Carrito -->
+
+    </section>
+
+    <main class="principalCarrito">
+        <div id="contenedorCarrito">
+            <div class="tarjetaCarrito">
+                <p>Laptop asus</p>
+                <img src="imagen/lap asus.jpg" alt="" width="80%" height="200px"> <br><br>
+                <button onclick="agregarAlCarrito('imagen/lap asus.jpg','Laptop asus')">Agregar al carrito</button>
+            </div>
+
+            <div class="tarjetaCarrito">
+                <p>Laptop Gamer</p>
+                <img src="imagen/lap gamer.jpg" alt="" width="80%" height="200px"> <br><br>
+                <button onclick="agregarAlCarrito('imagen/lap gamer.jpg','Laptop gamer')">Agregar al carrito</button>
+            </div>
+
+            <div class="tarjetaCarrito">
+                <p>Laptop Dell</p>
+                <img src="imagen/laptp dell.jpeg" alt="" width="80%" height="200px"> <br><br>
+                <button onclick="agregarAlCarrito('imagen/laptp dell.jpeg','Laptop Dell')">Agregar al carrito</button>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="subfooter">
+            <a href="index.html">Inicio de página</a>
+        </div>
+        <div>
+            <ul class="columnas">
+                <li><a href="#">Amazon Music</a></li>
+                <li><a href="#">Vende en Amazon</a></li>
+                <li><a href="#">Amazon Global</a></li>
+                <li><a href="#">Amazon Libros</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="scriptCarrito.js"></script>
+</body>
+
+</html>
